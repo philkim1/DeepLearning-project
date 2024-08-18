@@ -20,16 +20,16 @@ What kind of model did you choose for this experiment and why? Give an overview 
 Remember that your README should:
 - Include a screenshot of completed training jobs
 
-![completed training jobs.png](completed training jobs.png)
+![completed training jobs](completed training jobs.png)
 - Logs metrics during the training process
 
-![tensor_plot.png](tensor_plot.png)
+![tensor_plot](tensor_plot.png)
 - Tune at least two hyperparameters
 
-![HP tuning job summary.png](HP tuning job summary.png)
+![HP tuning job summary](HP tuning job summary.png)
 - Retrieve the best best hyperparameters from all your training jobs
 
-![best training job hyperparameters.png](best training job hyperparameters.png)
+![best training job hyperparameters](best training job hyperparameters.png)
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
