@@ -21,12 +21,15 @@ Remember that your README should:
 - Include a screenshot of completed training jobs
 
 ![completed training jobs](completed training jobs.png)
+
 - Logs metrics during the training process
 
 ![tensor_plot](tensor_plot.png)
+
 - Tune at least two hyperparameters
 
 ![HP tuning job summary](HP tuning job summary.png)
+
 - Retrieve the best best hyperparameters from all your training jobs
 
 ![best training job hyperparameters](best training job hyperparameters.png)
