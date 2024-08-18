@@ -32,7 +32,7 @@ Remember that your README should:
 
 - Retrieve the best best hyperparameters from all your training jobs
 
-![best training job hyperparameters](best_training_job_hyperparameters.png)
+![best training job hyperparameters](Best_training_job_hyperparameters.png)
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
