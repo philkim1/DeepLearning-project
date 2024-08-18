@@ -30,7 +30,7 @@ Remember that your README should:
 
 ![HP tuning job summary](HP_tuning_job_summary.png)
 
-- Retrieve the best best hyperparameters from all your training jobs
+- Retrieve the best hyperparameters from all your training jobs
 
 ![best training job hyperparameters](Best_training_job_hyperparameters.png)
 
