@@ -24,7 +24,7 @@ Remember that your README should:
 
 - Logs metrics during the training process
 
-![tensor_plot](tensor_plot.png)
+![logs metrics](log_metrics_charts.png)
 
 - Tune at least two hyperparameters
 
@@ -35,6 +35,9 @@ Remember that your README should:
 ![best training job hyperparameters](Best_training_job_hyperparameters.png)
 
 ## Debugging and Profiling
+
+![tensor_plot](tensor_plot.png)
+
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
 
 ### Results
