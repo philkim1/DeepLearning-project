@@ -28,7 +28,7 @@ Remember that your README should:
 
 - Tune at least two hyperparameters
 
-![HP tuning job summary](HP_tuning_job_summary.png)
+![HP tuning parameters](HP_tuning_parameters.png)
 
 - Retrieve the best hyperparameters from all your training jobs
 
