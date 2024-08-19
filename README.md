@@ -83,7 +83,11 @@ functions for the model, input and prediction/output.
   2. input_fn - takes in the input passed in to the function that invokes the endpoint
   3. predict_fn - transforms the input the same way the training data was transformed, performs inference and returns the result
 
+- Endpoint Summary
+
 ![endpoint summary](endpoint_summary.png)
+
+- Invoking the Endpoint
 
 ![invoked endpoint](invoking_endpoint2.png)
 
