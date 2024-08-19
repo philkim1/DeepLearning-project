@@ -53,7 +53,7 @@ Remember that your README should:
 
 ![endpoint summary](endpoint_summary.png)
 
-![invoked endpoint](invoking_endpoint.png)
+![invoked endpoint](invoking_endpoint2.png)
 
 ## Standout Suggestions
 **TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
