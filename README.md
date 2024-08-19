@@ -49,15 +49,17 @@ were 1 through 4,
 
 ## Debugging and Profiling
 Debugger rules chosen were.
-  1.Vanishing Gradient
-  2.Overfit
-  3.Overtraining
-  4.Poor weight initialization
-  5.Loss not decreasing
+
+  1. Vanishing Gradient
+  2. Overfit
+  3. Overtraining
+  4. Poor weight initialization
+  5. Loss not decreasing
 
 Profiler rules chosen were
-  1.LowGPU utilization
-  2.ProfilerReport
+
+  1. LowGPU utilization
+  2. ProfilerReport
 
 From the Debugger Plot it appears that the loss function is decreasing for both the training and eval cycles.
 
@@ -66,9 +68,9 @@ From the Debugger Plot it appears that the loss function is decreasing for both 
 ### Results
 From the profiler report, it shows that no rules were triggered. However the rules with the most datapoints processed were:
 
-  1.Batchsize
-  2.CPUBottleneck
-  3.IOBottleneck
+  1. Batchsize
+  2. CPUBottleneck
+  3. IOBottleneck
 
 These rules with the most datapoints are probably due to the CPU being utilized all the time, I never checked to see if a GPU was available to use.
 Most of the time GPU's are not available.
@@ -76,13 +78,16 @@ Most of the time GPU's are not available.
 
 ## Model Deployment
 
-**TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+To deploy the trained model another pytorch model was created using the model data/artifact from the trained model with the best hyperparameters and a new script that contains the
+functions for the model, input and prediction/output.
 
-**TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
+  1. model_fn - loads the saved model from the training and the model configuration.
+  2. input_fn - takes in the input passed in to the function that invokes the endpoint
+  3. predict_fn - transforms the input the same way the training data was transformed, performs inference and returns the result
 
 ![endpoint summary](endpoint_summary.png)
 
 ![invoked endpoint](invoking_endpoint2.png)
 
 ## Standout Suggestions
-**TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
+Would have tried to create my own dockerfile to use to run inferences on sample images, but was running out of budget.
