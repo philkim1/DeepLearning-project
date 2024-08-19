@@ -51,5 +51,9 @@ Remember that your README should:
 
 **TODO** Remember to provide a screenshot of the deployed active endpoint in Sagemaker.
 
+![endpoint summary](endpoint_summary.png)
+
+![invoked endpoint](invoking_endpoint.png)
+
 ## Standout Suggestions
 **TODO (Optional):** This is where you can provide information about any standout suggestions that you have attempted.
