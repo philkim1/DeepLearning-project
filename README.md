@@ -17,9 +17,9 @@ The data was downloaded and unzipped to my sagemaker directory. From there the u
 ## Hyperparameter Tuning
 RESNET50 was the model chosen for the image classifier due to it providing more accuracy than RESNET18.
 The hyperparameters chosen for tuning were.
-1. Batch size
-2. learning rate
-3. epochs
+  1. Batch size
+  2. learning rate
+  3. epochs
 
 Learning rate is how quickly the weights are adjusted, so if the weights are adjusted too quickly then the model may overshoot in either direction in getting to the optimal set of weights.
 The learning rate chosen was between 0.001 and 0.1.
@@ -33,7 +33,7 @@ were 1 through 4,
 
 - Completed training jobs
 
-![completed training jobs](completed_training_jobs.png)
+![completed training jobs](completed_training_jobs2.png)
 
 - Logs metrics during the training process
 
@@ -45,19 +45,19 @@ were 1 through 4,
 
 - Best hyperparameters from all the training jobs
 
-![best training job hyperparameters](Best_training_job_hyperparameters.png)
+![best training job hyperparameters](Best_training_job_hyperparameters2.png)
 
 ## Debugging and Profiling
 Debugger rules chosen were.
-1.Vanishing Gradient
-2.Overfit
-3.Overtraining
-4.Poor weight initialization
-5.Loss not decreasing
+  1.Vanishing Gradient
+  2.Overfit
+  3.Overtraining
+  4.Poor weight initialization
+  5.Loss not decreasing
 
 Profiler rules chosen were
-1.LowGPU utilization
-2.ProfilerReport
+  1.LowGPU utilization
+  2.ProfilerReport
 
 From the Debugger Plot it appears that the loss function is decreasing for both the training and eval cycles.
 
@@ -66,9 +66,9 @@ From the Debugger Plot it appears that the loss function is decreasing for both 
 ### Results
 From the profiler report, it shows that no rules were triggered. However the rules with the most datapoints processed were:
 
-1.Batchsize
-2.CPUBottleneck
-3.IOBottleneck
+  1.Batchsize
+  2.CPUBottleneck
+  3.IOBottleneck
 
 These rules with the most datapoints are probably due to the CPU being utilized all the time, I never checked to see if a GPU was available to use.
 Most of the time GPU's are not available.
